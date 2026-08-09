@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in LaTeX
+% Paolo Nessim
+% Format: sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://paolonessim.com/}{\Large Paolo Nessim}} & Email: \href{mailto:paolo.j.nessim@gmail.com}{paolo.j.nessim@gmail.com}\\
+  \href{https://paolonessim.com/}{paolonessim.com} $|$ \href{https://github.com/PaoloJN}{github.com/PaoloJN} $|$ \href{https://linkedin.com/in/paolonessim}{linkedin.com/in/paolonessim} & Mobile: \href{tel:+13018280936}{+1-301-828-0936} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Montgomery College}{Germantown, MD}
+      {Associate of Science in Computer Engineering; GPA: 3.60/4.0}{Expected May 2027}
+      \resumeItemListStart
+        \resumeItemPlain{Dean's List; Phi Theta Kappa Honor Society; Southern Management Leadership Program (SMLP) Scholar}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Maryland, A. James Clark School of Engineering}{College Park, MD}
+      {Research Intern, Cyber-Physical Systems Engineering (CPSE)}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItemPlain{Built a real-time computer-vision pipeline (Python, OpenCV) that detects and tracks physical chessboard state for the Magic Gambit v2 robotic chess system, driving robotic-arm motion planning from live piece movement.}
+        \resumeItemPlain{Designed the system's custom ESP32 (WROOM-32E) controller PCB: schematic capture with zero ERC errors, USB-C programming with CH340C auto-reset, ESD protection, and a TPS61022 boost power chain, sourced against the LCSC catalog for JLCPCB fabrication.}
+        \resumeItemPlain{Implemented an ESP-NOW wireless link to a RoArm-M2-S robotic arm and a real-time web interface for live board-state visualization and control.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Maryland, CPSE Summer Program}{College Park, MD}
+      {Hardware/Software Engineer}{Jun 2025 -- Aug 2025}
+      \resumeItemListStart
+        \resumeItemPlain{Developed ``ICantSee,'' an assistive proof-of-concept combining live computer vision with haptic feedback so visually impaired users can sense obstacles in real time.}
+        \resumeItemPlain{Selected from the summer cohort to continue as an academic-year CPSE research intern.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NASA L'SPACE Mission Concept Academy}{Remote}
+      {Computer Engineering Participant}{Jan 2026 -- May 2026}
+      \resumeItemListStart
+        \resumeItemPlain{Designed a space mission concept through Preliminary Design Review (PDR) on a multidisciplinary team, producing NASA-standard engineering documentation across systems, science, and operations sub-teams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nessimworks, Web Development \& Software Services}{Germantown, MD}
+      {Full-Stack Developer \& UI Designer}{Jan 2023 -- Present}
+      \resumeItemListStart
+        \resumeItemPlain{Design, ship, and maintain production websites for small-business and nonprofit clients (React, Next.js, Tailwind CSS), owning requirements gathering, delivery, and Git-based deployment workflows end to end.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://snipprompt.com}{Snipprompt --- Chrome Extension SaaS}}
+      {Freemium prompt-snippet manager live on the Chrome Web Store with paying subscribers (\$9/mo Pro tier); Plasmo (Manifest V3), Next.js, Better Auth, Stripe, Neon Postgres + Drizzle ORM. Owned the full product lifecycle solo, including Chrome Web Store review recovery across four submissions.}
+    \resumeSubItem{\href{https://github.com/PaoloJN/beacon}{Beacon --- Self-Hosted Error Tracking Platform}}
+      {Lightweight Sentry alternative: Python ingestion core and REST API covered by 49 tests, React (Vite) dashboard, Python and Node.js client SDKs, Docker multi-stage builds, LLM cost tracking, and alerting.}
+    \resumeSubItem{\href{https://github.com/PaoloJN/openchess}{OpenChess --- Smart Chessboard Hardware}}
+      {Physical chessboard on a custom ESP32 PCB with 64 hall-effect sensors for magnetic piece detection, a WS2812 LED matrix for move feedback, and an OLED interface; plays online via Lichess.}
+    \resumeSubItem{\href{https://satgaze.com}{Satgaze --- Real-Time 3D Satellite Tracker}}
+      {Browser-based visualization rendering live positions of 24,000+ satellites via SGP4/TLE orbital propagation (Next.js, TypeScript, Three.js/WebGL).}
+  \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP-----------------
+\section{Leadership \& Activities}
+  \resumeSubHeadingListStart
+    \resumeItemPlain{Co-Lead, AI Project Team, Raptors Who Code (Montgomery College), Feb 2024 -- Present; MC AI Club member; open-source contributor.}
+  \resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item\small{
+      \textbf{Languages}{: Python, C/C++ (embedded), TypeScript/JavaScript, Java, SQL} \\
+      \textbf{Hardware \& Embedded}{: Schematic capture \& PCB design (Flux.ai), ESP32, ESP-NOW, Arduino, hall-effect \& haptic sensor integration, oscilloscopes, circuit prototyping; Fusion 360, Onshape} \\
+      \textbf{Software}{: OpenCV, React, Next.js, Node.js, Docker, Stripe, PostgreSQL (Neon, Drizzle), Tailwind CSS, Git, Linux}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
