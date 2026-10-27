@@ -1,24 +1,16 @@
 # Paolo Nessim — Resume
 
-LaTeX source for my resume. The PDF is built automatically by GitHub Actions on every push to `main` and committed back to the repo as `resume.pdf`.
-
-- **Source:** [`resume.tex`](resume.tex)
 - **PDF:** [`resume.pdf`](resume.pdf)
+- **Source:** [`resume.html`](resume.html) (plain HTML + CSS, Letter size)
 
-## Building locally
-
-With Docker:
+## Building
 
 ```sh
 ./build.sh
 ```
 
-Or with any TeX distribution:
+Renders `resume.html` to `resume.pdf` with headless Chrome. Set `CHROME` to point at a different Chrome/Chromium binary if needed.
 
-```sh
-pdflatex resume.tex
-```
+## Archive
 
-## Credit
-
-Format based on the MIT-licensed [sb2nov/resume](https://github.com/sb2nov/resume) template.
+The earlier LaTeX version (sb2nov template, MIT License) lives in [`latex/`](latex/). The unpublished August 2026 redesign is on the `latex-redesign-aug-2026` branch.

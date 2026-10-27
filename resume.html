@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Paolo Nessim - Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @page { size: Letter; margin: 0.5in 0.6in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 10.6pt;
+    line-height: 1.38;
+    color: #111;
+    background: #fff;
+  }
+  .page { max-width: 7.2in; margin: 0 auto; padding: 0.5in 0; }
+  @media print { .page { max-width: none; padding: 0; } }
+  a { color: #1a4d8f; text-decoration: none; }
+  h1 { font-size: 22pt; font-weight: 700; margin: 0; letter-spacing: 0.2px; }
+  .contact { margin: 4px 0 0; font-size: 10pt; }
+  .contact span + span::before { content: " \00b7 "; color: #777; padding: 0 4px; }
+  .summary { margin: 10px 0 0; }
+  h2 {
+    font-size: 10.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
+    margin: 15px 0 7px; padding-bottom: 3px; border-bottom: 1px solid #111;
+    break-after: avoid;
+  }
+  .entry { margin: 0 0 10px; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
+  .row .l { font-weight: 700; }
+  .row .r { white-space: nowrap; font-size: 10pt; }
+  .sub { display: flex; justify-content: space-between; font-style: italic; font-size: 10.2pt; margin-top: 1px; }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin: 0 0 3px; }
+  .proj .row .r { font-size: 9.8pt; }
+  .tech { color: #444; }
+  .skills p { margin: 0 0 5px; }
+  .lead p { margin: 0 0 4px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>Paolo Nessim</h1>
+  <p class="contact">
+    <span>Clarksburg, MD</span>
+    <span><a href="mailto:paolo.j.nessim@gmail.com">paolo.j.nessim@gmail.com</a></span>
+    <span><a href="tel:+13018280936">(301) 828-0936</a></span>
+    <span><a href="https://paolonessim.com">paolonessim.com</a></span>
+    <span><a href="https://github.com/PaoloJN">github.com/PaoloJN</a></span>
+  </p>
+</header>
+
+<section>
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row"><span class="l">Montgomery College</span><span class="r">Germantown, MD</span></div>
+    <div class="sub"><span>A.S. Computer Engineering and A.A. Computer Science &mdash; GPA 3.58 / 4.0</span><span>Expected May 2027</span></div>
+    <ul>
+      <li>Dean's List; Phi Theta Kappa Honor Society; Southern Management Leadership Program Scholar.</li>
+      <li>Coursework: Computer Science I&ndash;II (Java), Calculus I&ndash;II, General Chemistry for Engineers, Intro to Engineering Design. In progress: Digital Logic Design, Discrete Structures, Physics I.</li>
+      <li>Planned transfer, Fall 2027: University of Maryland, B.S. Cyber-Physical Systems Engineering at the Universities at Shady Grove (application in progress; expected B.S. May 2029).</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="row"><span class="l">University of Maryland, A. James Clark School of Engineering</span><span class="r">Rockville, MD (Shady Grove)</span></div>
+    <div class="sub"><span>Research Intern, Cyber-Physical Systems Engineering (CPSE)</span><span>Aug 2025 &ndash; Present</span></div>
+    <ul>
+      <li>Built the real-time computer vision pipeline (Python, OpenCV) for Magic Gambit v2, a robotic chess system: camera feed to board state to robotic-arm motion plan, tracking every piece as it moves.</li>
+      <li>Designed the system controller from scratch: a custom ESP32-WROOM-32E PCB in KiCad with USB-C programming, CH340C auto-reset, ESD protection, and a TPS61022 boost power stage. Zero ERC errors; parts sourced against LCSC for JLCPCB fabrication.</li>
+      <li>Implemented an ESP-NOW wireless link to a RoArm-M2-S robotic arm and a live web interface for board-state visualization and control.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">University of Maryland, CPSE Summer Program</span><span class="r">Rockville, MD</span></div>
+    <div class="sub"><span>Hardware/Software Engineer</span><span>Jun 2025 &ndash; Aug 2025</span></div>
+    <ul>
+      <li>Built <a href="https://github.com/PaoloJN/ICantSee">ICantSee</a>, an assistive device pairing live computer vision with haptic feedback so visually impaired users can sense obstacles in real time. Selected from the cohort to continue as an academic-year research intern.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">NASA L'SPACE Mission Concept Academy</span><span class="r">Remote</span></div>
+    <div class="sub"><span>Computer Engineering Participant</span><span>Jan 2026 &ndash; May 2026</span></div>
+    <ul>
+      <li>Carried a space mission concept through Preliminary Design Review on a multidisciplinary team, writing NASA-standard systems, science, and operations documentation.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Nessimworks</span><span class="r">Clarksburg, MD</span></div>
+    <div class="sub"><span>Founder, Full-Stack Developer</span><span>Jan 2023 &ndash; Present</span></div>
+    <ul>
+      <li>Scope, build, deploy, and maintain production websites and web apps for small-business and nonprofit clients (React, Next.js, PostgreSQL), owning requirements through delivery.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="entry proj">
+    <div class="row"><span class="l">Satgaze &mdash; Real-Time 3D Satellite Tracker</span><span class="r"><a href="https://satgaze.com">satgaze.com</a></span></div>
+    <ul>
+      <li><span class="tech">TypeScript, Next.js, Three.js/WebGL.</span> Renders live positions of 24,000+ satellites in the browser, propagated from TLE data with SGP4 orbital mechanics.</li>
+    </ul>
+  </div>
+  <div class="entry proj">
+    <div class="row"><span class="l">OpenChess &mdash; Smart Chessboard Hardware</span><span class="r"><a href="https://github.com/PaoloJN/openchess">github.com/PaoloJN/openchess</a></span></div>
+    <ul>
+      <li><span class="tech">KiCad, ESP32, C++ (PlatformIO), BLE, Expo.</span> Chessboard that knows where every piece is: 64 hall-effect sensors, 81 RGB LEDs, OLED menu, printed case, and a BLE phone app, all on a custom ESP32 PCB. Plays online through Lichess. Automated validators check schematic wiring and placement before every fabrication run.</li>
+    </ul>
+  </div>
+  <div class="entry proj">
+    <div class="row"><span class="l">Sensei Puck &mdash; Submersible BLE Water Sensor</span><span class="r"><a href="https://github.com/PaoloJN/sensei-puck">github.com/PaoloJN/sensei-puck</a></span></div>
+    <ul>
+      <li><span class="tech">KiCad 10, nRF52840, C (PlatformIO), BLE.</span> 46 mm sealed puck that logs conductivity, temperature, pressure, spectral, capacitive wetness, and audio from inside a water container. Complete, ERC-clean schematic; 4-layer, 139-footprint board; compiling bring-up firmware and OTA plan. Archived before fabrication with a written decision log on why.</li>
+    </ul>
+  </div>
+  <div class="entry proj">
+    <div class="row"><span class="l">kicad-ai-tools &mdash; Agent-Driven PCB Design</span><span class="r"><a href="https://github.com/PaoloJN/kicad-ai-tools">github.com/PaoloJN/kicad-ai-tools</a></span></div>
+    <ul>
+      <li><span class="tech">Python, KiCad 10 IPC API.</span> Tooling that lets an AI agent edit a live KiCad design over IPC with a propose, gate, accept loop, using kicad-cli as the single source of truth for DRC and ERC.</li>
+    </ul>
+  </div>
+  <div class="entry proj">
+    <div class="row"><span class="l">Beacon &mdash; Self-Hosted Error Tracking Platform</span><span class="r"><a href="https://github.com/PaoloJN/beacon">github.com/PaoloJN/beacon</a></span></div>
+    <ul>
+      <li><span class="tech">Python, React, Docker.</span> Lightweight Sentry alternative: Python ingestion core and REST API covered by 49 tests, Python and Node.js SDKs, React triage dashboard, alerting, one Docker image.</li>
+    </ul>
+  </div>
+  <div class="entry proj">
+    <div class="row"><span class="l">Recap &mdash; AI for YouTube, Open Source, 660+ GitHub stars</span><span class="r"><a href="https://github.com/PaoloJN/recap">github.com/PaoloJN/recap</a></span></div>
+    <ul>
+      <li><span class="tech">TypeScript, React, Plasmo, OpenAI / Anthropic / Google APIs.</span> Chrome extension that adds summaries, a searchable transcript, and chat with citations that seek the video, in a sidebar. Bring-your-own-key, no server, no telemetry.</li>
+    </ul>
+  </div>
+  <div class="entry proj">
+    <div class="row"><span class="l">Snipprompt &mdash; Chrome Extension SaaS</span><span class="r"><a href="https://snipprompt.com">snipprompt.com</a></span></div>
+    <ul>
+      <li><span class="tech">Plasmo (MV3), Next.js, Stripe, Neon Postgres.</span> Prompt-snippet manager live on the Chrome Web Store with paying subscribers. Built, shipped, and operated solo, including a native macOS menubar companion (Swift) and a Raycast extension.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Skills</h2>
+  <p><b>Languages:</b> C/C++ (embedded), Python, TypeScript/JavaScript, Java, SQL</p>
+  <p><b>Embedded &amp; Hardware:</b> KiCad schematic capture and PCB layout, ESP32 and nRF52840 (ESP-IDF, PlatformIO, Arduino), ESP-NOW, BLE, UART/I2C/SPI, sensor integration (hall-effect, haptic, camera), power design (boost regulators, USB-C), oscilloscopes and bench debugging, digital logic, Fusion 360, Onshape</p>
+  <p><b>Software &amp; Tools:</b> OpenCV, computer vision, ROS, real-time systems, REST APIs, Docker, Linux, Git, PostgreSQL, React, Next.js, Node.js, MCP servers and LLM agent tooling, automated testing, technical documentation</p>
+  <p><b>Clearance:</b> U.S. citizen, eligible for a U.S. security clearance (none held)</p>
+</section>
+
+<section class="lead">
+  <h2>Leadership &amp; Activities</h2>
+  <p>Co-Lead, AI Project Team, Raptors Who Code, Montgomery College (Feb 2024 &ndash; Present). Member, MC AI Club. Open-source maintainer: 35 public repositories, ~1,250 GitHub contributions in 2026.</p>
+</section>
+
+</div>
+</body>
+</html>
